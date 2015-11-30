@@ -1,0 +1,29 @@
+{
+  "name": "md5is",
+  "version": "1.0.0",
+  "description": "Check if the md5 matches",
+  "main": "app.js",
+  "bin": {
+    "md5is": "./app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "md5"
+  ],
+  "author": "makenova",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makenova/md5is"
+  },
+  "bugs": "https://github.com/makenova/md5is/issues",
+  "engines": {
+    "node": ">=4.2.1"
+  },
+  "os": [
+    "darwin"
+  ],
+  "dependencies": {}
+}
