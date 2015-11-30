@@ -1,4 +1,4 @@
-# nodeginx
+# md5is
 
 A command line tool to check if a calculated md5 hash matches an expected value.
 Only tested on OSX.
@@ -30,4 +30,4 @@ Please report any bugs to: <https://github.com/makenova/md5is/issues>
 
 ## License
 
-Licensed under the MIT License: https://opensource.org/licenses/MIT
+Licensed under the MIT License: <https://opensource.org/licenses/MIT>
