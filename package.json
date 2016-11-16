@@ -1,6 +1,6 @@
 {
   "name": "md5is",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Check if the md5 matches",
   "main": "app.js",
   "bin": {
