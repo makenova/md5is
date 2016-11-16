@@ -2,11 +2,11 @@
 
 'use strict'
 
-var fs = require('fs')
-var hash = require('crypto').createHash('md5')
+let fs = require('fs')
+let hash = require('crypto').createHash('md5')
 
-var fileName = process.argv[2]
-var expectedmd5 = process.argv[3]
+const fileName = process.argv[2]
+const expectedmd5 = process.argv[3]
 
 if(fileName === undefined) {
   console.log('A file name and md5 hash are required')
@@ -16,7 +16,11 @@ if(fileName === undefined) {
 fs.createReadStream(`./${fileName}`)
   .on('data', (data) => hash.update(data, 'utf8'))
   .on('end', () => {
-    var calculatedhash = hash.digest('hex')
+    const calculatedhash = hash.digest('hex')
+    if(!expectedmd5) {
+      console.log(`The hash of ${fileName} is ${calculatedhash}`)
+      process.exit(0)
+    }
     if(calculatedhash === expectedmd5) {
       console.log('All good!')
       process.exit(0)
