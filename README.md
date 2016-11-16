@@ -1,5 +1,7 @@
 # md5is
 
+[![Build Status](https://travis-ci.org/makenova/md5is.svg?branch=master)](https://travis-ci.org/makenova/md5is)
+
 A command line tool to check if a calculated md5 hash matches an expected value.
 Only tested on OSX.
 
